@@ -10,14 +10,24 @@ public class AdmobController : MonoBehaviour
     private InterstitialAd intersitional;
     private BannerView banner;
 
+#if UNITY_IOS
+    private string appId="ca-app-pub-4962234576866611~5559847235";
+    private string intersitionalId="ca-app-pub-4962234576866611/6456096125";
+    private string bannerId="ca-app-pub-4962234576866611/6703508133";
+
+    private string unityAds = "4919166";
+#else
     private string appId="ca-app-pub-4962234576866611~8569352363";
     private string intersitionalId="ca-app-pub-4962234576866611/3961120998";
-
     private string bannerId="ca-app-pub-4962234576866611/5943189028";
+
+    private string unityAds = "4919167";
+#endif
+
+
 
     public static int adsCnt = 1;
 
-    private string unityAds = "4919167";
     
     void Start(){
 
