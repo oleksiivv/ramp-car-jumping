@@ -17,7 +17,7 @@ public class PauseController : MonoBehaviour
         Resume();
 
         levelLabel.text = Application.loadedLevel.ToString();
-        levelLabelWinPanel.text = "LEVEL "+Application.loadedLevel.ToString();
+        levelLabelWinPanel.text = "";//"LEVEL "+Application.loadedLevel.ToString();
         nextLevelLabelWinPanel.text = "NEXT: LEVEL "+(Application.loadedLevel+1).ToString();
 
         admob = gameObject.AddComponent<AdmobController>();
@@ -40,7 +40,7 @@ public class PauseController : MonoBehaviour
     public void Restart(){
         Time.timeScale=1;
 
-        admob.showIntersitionalAd();
+        //admob.showIntersitionalAd();
 
         scenesManager.OpenScene(Application.loadedLevel);
     }
