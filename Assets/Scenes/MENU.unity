@@ -19494,6 +19494,7 @@ GameObject:
   - component: {fileID: 1869945275}
   - component: {fileID: 1869945277}
   - component: {fileID: 1869945280}
+  - component: {fileID: 1869945278}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -19588,6 +19589,18 @@ MonoBehaviour:
   - {fileID: 518981638}
   gameIsCompletedPanel: {fileID: 668400968}
   ratePanel: {fileID: 2012557115}
+--- !u!114 &1869945278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869945274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec98d7cb93df7ed4b8b83a97524c1657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1869945280
 MonoBehaviour:
   m_ObjectHideFlags: 0
